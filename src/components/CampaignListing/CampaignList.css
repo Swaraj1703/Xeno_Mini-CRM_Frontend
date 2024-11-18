@@ -1,0 +1,89 @@
+
+/* Table and general styling as provided */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table th,
+.table td {
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+  border: 1px solid #dee2e6;
+}
+
+.table th {
+  background-color: #20B2AA;
+  color: white;
+  text-align: left;
+  font-weight: 600;
+}
+
+.table td {
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+.table tr:hover td {
+  background-color: #e6f7ff;
+  color: #333333;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #070a07;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.heading::before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #20B2AA;
+  margin: 0 auto 1rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .table th,
+  .table td {
+    padding: 0.5rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+
+.delete-button {
+  background-color: #e74c3c; /* Red background color */
+  color: white; /* White text for contrast */
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px; /* Rounded corners */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.delete-button:hover {
+  background-color: #c0392b; 
+}
+
+.delete-button:active {
+  background-color: #a93226;
+  transform: scale(0.98); 
+}
